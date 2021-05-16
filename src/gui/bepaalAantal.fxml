@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="587.0" style="-fx-background-color: #ECECE7;" type="BorderPane" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView id="stenenImg" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/70dbc04987f1d5ddee91207baf4d79c0.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="394.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="titelLabel" fx:id="titelLabel" alignment="CENTER" layoutX="33.0" layoutY="101.0" prefHeight="66.0" prefWidth="135.0" text="Rummikub" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <ImageView id="logoGroenImg" fx:id="logoGroenImg" fitHeight="73.0" fitWidth="145.0" layoutX="37.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/imgonline-com-ua-Color-filter-ZFN1mfY479dh-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+            <Label id="welkomLabel" fx:id="welkomLabel" layoutX="65.0" layoutY="158.0" text="Welkom!">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCancel" layoutX="28.0" layoutY="332.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: #E96151;" text="ANNULEREN" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button id="loginBtn" fx:id="btnContinue" layoutX="28.0" layoutY="291.0" mnemonicParsing="false" onAction="#continueButtonOnAction" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: #E96151;" text="VOLGENDE" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblFoutmelding" layoutX="28.0" layoutY="192.0" minWidth="-Infinity" prefHeight="40.0" prefWidth="149.0" textFill="#ee0000" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cbAantalSpelers" layoutX="26.0" layoutY="242.0" prefWidth="150.0" value="-Kies aantal spelers-" />
+            <Button fx:id="buttonEnglish" blendMode="COLOR_BURN" layoutX="114.0" layoutY="373.0" mnemonicParsing="false" onAction="#englishButtonOnAction" prefHeight="21.0" prefWidth="29.0" text="EN" textFill="#0505ff">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonDutch" blendMode="COLOR_BURN" layoutX="149.0" layoutY="373.0" mnemonicParsing="false" onAction="#dutchButtonOnAction" prefHeight="21.0" prefWidth="29.0" text="NL" textFill="#0505ff">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</fx:root>
